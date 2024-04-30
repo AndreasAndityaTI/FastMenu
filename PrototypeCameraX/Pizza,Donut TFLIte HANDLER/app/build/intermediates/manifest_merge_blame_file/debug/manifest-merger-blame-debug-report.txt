@@ -1,0 +1,75 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~ Copyright 2020 Google LLC
+4  ~
+5  ~ Licensed under the Apache License, Version 2.0 (the "License");
+6  ~ you may not use this file except in compliance with the License.
+7  ~ You may obtain a copy of the License at
+8  ~
+9  ~     https://www.apache.org/licenses/LICENSE-2.0
+10  ~
+11  ~ Unless required by applicable law or agreed to in writing, software
+12  ~ distributed under the License is distributed on an "AS IS" BASIS,
+13  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+14  ~ See the License for the specific language governing permissions and
+15  ~ limitations under the License.
+16-->
+17<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+18    package="com.android.example.camerax.tflite"
+19    android:versionCode="1"
+20    android:versionName="0.0.1" >
+21
+22    <uses-sdk
+23        android:minSdkVersion="21"
+23-->C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml
+24        android:targetSdkVersion="29" />
+24-->C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml
+25
+26    <!-- Declare features -->
+27    <uses-feature android:name="android.hardware.camera" />
+27-->C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:22:5-60
+27-->C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:22:19-57
+28
+29    <!-- Declare permissions -->
+30    <uses-permission android:name="android.permission.CAMERA" />
+30-->C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:25:5-65
+30-->C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:25:22-62
+31
+32    <application
+32-->C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:27:5-46:19
+33        android:allowBackup="true"
+33-->C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:28:9-35
+34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+34-->[androidx.core:core:1.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\e4df6b6fc68e5bdf645c1fd4bd77db80\transformed\core-1.1.0\AndroidManifest.xml:24:18-86
+35        android:debuggable="true"
+36        android:icon="@mipmap/ic_launcher"
+36-->C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:29:9-43
+37        android:label="@string/app_name"
+37-->C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:30:9-41
+38        android:roundIcon="@mipmap/ic_launcher_round"
+38-->C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:31:9-54
+39        android:supportsRtl="true"
+39-->C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:32:9-35
+40        android:testOnly="true"
+41        android:theme="@style/AppTheme" >
+41-->C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:33:9-40
+42        <activity
+42-->C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:36:9-44:20
+43            android:name="com.android.example.camerax.tflite.CameraActivity"
+43-->C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:37:13-43
+44            android:rotationAnimation="seamless" >
+44-->C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:38:13-49
+45            <intent-filter>
+45-->C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:40:13-43:29
+46                <action android:name="android.intent.action.MAIN" />
+46-->C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:41:17-68
+46-->C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:41:25-66
+47
+48                <category android:name="android.intent.category.LAUNCHER" />
+48-->C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:42:17-76
+48-->C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:42:27-74
+49            </intent-filter>
+50        </activity>
+51    </application>
+52
+53</manifest>
