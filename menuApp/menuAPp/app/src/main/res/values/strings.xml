@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FastMenu</string>
+    <string name="searchbar_hint">Cari menu</string>
+    <string name="input_menu">Masukkan menu</string>
+    <string name="input_deskripsi">Masukkan deskripsi</string>
+    <string name="input_harga">Masukkan harga</string>
+
+
+</resources>

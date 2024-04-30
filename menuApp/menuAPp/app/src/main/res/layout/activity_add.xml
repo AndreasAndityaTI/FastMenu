@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddActivity">
+
+
+    <EditText
+        android:id="@+id/input_deskripsi"
+        android:layout_width="346dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="@string/input_deskripsi"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deskripsi" />
+
+    <TextView
+        android:id="@+id/judulAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Add Menu Makanan"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tittle"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="@+id/tittle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tittle"
+        android:layout_width="97dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="76dp"
+        android:text="Deskripsi"
+        app:layout_constraintEnd_toEndOf="@+id/deskripsi"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/deskripsi"
+        app:layout_constraintTop_toBottomOf="@+id/judulAdd" />
+
+    <EditText
+        android:id="@+id/input_something"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/input_menu"
+        android:inputType="text"
+
+
+        app:layout_constraintStart_toEndOf="@+id/tittle"
+        app:layout_constraintTop_toBottomOf="@+id/judulAdd" />
+
+    <TextView
+        android:id="@+id/deskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        app:layout_constraintEnd_toEndOf="@+id/input_deskripsi"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="@+id/input_deskripsi"
+        app:layout_constraintTop_toBottomOf="@+id/judulAdd" />
+
+
+
+    <TextView
+        android:id="@+id/dueDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harga"
+        app:layout_constraintEnd_toStartOf="@+id/input_harga"
+        app:layout_constraintHorizontal_bias="0.247"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="451dp"
+        app:layout_constraintTop_toBottomOf="@+id/input_deskripsi"
+        />
+
+    <EditText
+        android:id="@+id/input_harga"
+        android:layout_width="268dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="@string/input_harga"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="444dp"
+        app:layout_constraintTop_toBottomOf="@+id/input_deskripsi"
+        />
+
+    <Button
+        android:id="@+id/submitAddButton"
+        style="@style/ButtonGeneral.ThirdVariant"
+        android:layout_width="374dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="4dp"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="@+id/input_harga"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/dueDateText"
+        app:layout_constraintTop_toBottomOf="@+id/input_harga" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
