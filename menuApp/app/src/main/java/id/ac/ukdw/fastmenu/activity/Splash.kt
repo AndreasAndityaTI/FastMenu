@@ -3,8 +3,9 @@ package id.ac.ukdw.fastmenu.activity
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.tasktrackerapp.R
 import id.ac.ukdw.fastmenu.MenuUtama
-import id.ac.ukdw.menuapp.R
+
 
 class Splash : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
