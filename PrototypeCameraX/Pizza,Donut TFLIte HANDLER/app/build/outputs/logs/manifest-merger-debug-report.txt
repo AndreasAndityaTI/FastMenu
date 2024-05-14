@@ -1,0 +1,188 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:17:1-48:12
+INJECTED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:17:1-48:12
+INJECTED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:17:1-48:12
+INJECTED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:17:1-48:12
+MERGED from [androidx.camera:camera-view:1.0.0-alpha09] C:\Users\yosriko\.gradle\caches\transforms-3\0b2a6b88af8ee15f59037c3c84b180b5\transformed\jetified-camera-view-1.0.0-alpha09\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\e91418bca0a70b48bc81469f1aad5455\transformed\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] C:\Users\yosriko\.gradle\caches\transforms-3\a7635ca8b9d0b9f86204b203ae5c5060\transformed\jetified-lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\yosriko\.gradle\caches\transforms-3\cee7b266a99db95940fbab2bcdd01fff\transformed\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.camera:camera-camera2:1.0.0-beta02] C:\Users\yosriko\.gradle\caches\transforms-3\89f1416f587488016bf5a8eac68a9d88\transformed\jetified-camera-camera2-1.0.0-beta02\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.camera:camera-lifecycle:1.0.0-beta02] C:\Users\yosriko\.gradle\caches\transforms-3\68d0ada7a5ba648d01851c640c41dc26\transformed\jetified-camera-lifecycle-1.0.0-beta02\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.camera:camera-core:1.0.0-beta02] C:\Users\yosriko\.gradle\caches\transforms-3\1b9ec4bcba3f8ea372e7fb8e7eb31467\transformed\jetified-camera-core-1.0.0-beta02\AndroidManifest.xml:17:1-24:12
+MERGED from [org.tensorflow:tensorflow-lite-support:0.0.0-nightly] C:\Users\yosriko\.gradle\caches\transforms-3\e25a121dcb0e2ecab826a4b1f70f6fea\transformed\jetified-tensorflow-lite-support-0.0.0-nightly\AndroidManifest.xml:2:1-5:12
+MERGED from [org.tensorflow:tensorflow-lite:0.0.0-nightly] C:\Users\yosriko\.gradle\caches\transforms-3\d62a4857a8e740306129bb56a8133de1\transformed\jetified-tensorflow-lite-0.0.0-nightly\AndroidManifest.xml:2:1-12:12
+MERGED from [org.tensorflow:tensorflow-lite-gpu:0.0.0-nightly] C:\Users\yosriko\.gradle\caches\transforms-3\8d6afd9ad186f79b788a0b481a4b811b\transformed\jetified-tensorflow-lite-gpu-0.0.0-nightly\AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\739027f5653922fe462a582136679660\transformed\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\89c9d1c455a18857799127d0426301c6\transformed\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\yosriko\.gradle\caches\transforms-3\f0635272d683513fc286d40040b04b0c\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\yosriko\.gradle\caches\transforms-3\89cd9d7d161b02790e8f61bc415cb03b\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\yosriko\.gradle\caches\transforms-3\8231b42a49e510820ead431158228c8e\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\yosriko\.gradle\caches\transforms-3\ae7d70cb01ca83b8dbdf9d67e5419729\transformed\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\cacd13b5d76234a56e9042398c9c5830\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\d703d0f0cc2c620f172afda6d034f438\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\yosriko\.gradle\caches\transforms-3\c1aec78071ce38f6aba523516a4b39de\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\e4df6b6fc68e5bdf645c1fd4bd77db80\transformed\core-1.1.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\yosriko\.gradle\caches\transforms-3\d8ee4f8c13f5e317b767755f7d731423\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\yosriko\.gradle\caches\transforms-3\aa3685f9f92b47d338c487628be256fc\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\yosriko\.gradle\caches\transforms-3\cb20b6d7214ab519aeda8a94ea80e8e8\transformed\exifinterface-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\8943b84b8790115dc1d78878fc630176\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\9d3946dd1bc9c9fa21986b1b39c50801\transformed\lifecycle-livedata-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\a5925ac075af2f25b2ae203fef621f12\transformed\lifecycle-livedata-core-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\yosriko\.gradle\caches\transforms-3\7f03206f1df594c0a6ba5337fb22786a\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\6cf2e64c5410295ae7db693472f6269b\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\407e8f52a7031dd4fd89659b9663db96\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\yosriko\.gradle\caches\transforms-3\b1d422b3de29512f4f79934a9f779e30\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0-rc01] C:\Users\yosriko\.gradle\caches\transforms-3\940b22fdbc1a06c0e304c86abd32fa80\transformed\jetified-annotation-experimental-1.0.0-rc01\AndroidManifest.xml:17:1-24:12
+INJECTED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:17:1-48:12
+INJECTED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:17:1-48:12
+INJECTED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:17:1-48:12
+	package
+		ADDED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:19:5-49
+		INJECTED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:17:1-48:12
+		INJECTED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:18:5-51
+	android:versionCode
+		INJECTED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:17:1-48:12
+		INJECTED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:17:11-69
+uses-feature#android.hardware.camera
+ADDED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:22:5-60
+	android:name
+		ADDED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:22:19-57
+uses-permission#android.permission.CAMERA
+ADDED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:25:5-65
+	android:name
+		ADDED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:25:22-62
+application
+ADDED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:27:5-46:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\yosriko\.gradle\caches\transforms-3\cee7b266a99db95940fbab2bcdd01fff\transformed\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\yosriko\.gradle\caches\transforms-3\cee7b266a99db95940fbab2bcdd01fff\transformed\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [org.tensorflow:tensorflow-lite:0.0.0-nightly] C:\Users\yosriko\.gradle\caches\transforms-3\d62a4857a8e740306129bb56a8133de1\transformed\jetified-tensorflow-lite-0.0.0-nightly\AndroidManifest.xml:10:5-20
+MERGED from [org.tensorflow:tensorflow-lite:0.0.0-nightly] C:\Users\yosriko\.gradle\caches\transforms-3\d62a4857a8e740306129bb56a8133de1\transformed\jetified-tensorflow-lite-0.0.0-nightly\AndroidManifest.xml:10:5-20
+MERGED from [org.tensorflow:tensorflow-lite-gpu:0.0.0-nightly] C:\Users\yosriko\.gradle\caches\transforms-3\8d6afd9ad186f79b788a0b481a4b811b\transformed\jetified-tensorflow-lite-gpu-0.0.0-nightly\AndroidManifest.xml:10:5-20
+MERGED from [org.tensorflow:tensorflow-lite-gpu:0.0.0-nightly] C:\Users\yosriko\.gradle\caches\transforms-3\8d6afd9ad186f79b788a0b481a4b811b\transformed\jetified-tensorflow-lite-gpu-0.0.0-nightly\AndroidManifest.xml:10:5-20
+MERGED from [androidx.core:core:1.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\e4df6b6fc68e5bdf645c1fd4bd77db80\transformed\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\e4df6b6fc68e5bdf645c1fd4bd77db80\transformed\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\8943b84b8790115dc1d78878fc630176\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\8943b84b8790115dc1d78878fc630176\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\e4df6b6fc68e5bdf645c1fd4bd77db80\transformed\core-1.1.0\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:32:9-35
+	android:label
+		ADDED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:30:9-41
+	tools:ignore
+		ADDED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:34:9-60
+	android:roundIcon
+		ADDED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:31:9-54
+	android:icon
+		ADDED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:29:9-43
+	android:allowBackup
+		ADDED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:28:9-35
+	android:theme
+		ADDED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:33:9-40
+activity#com.android.example.camerax.tflite.CameraActivity
+ADDED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:36:9-44:20
+	android:rotationAnimation
+		ADDED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:38:13-49
+	tools:targetApi
+		ADDED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:39:13-32
+	android:name
+		ADDED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:37:13-43
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:40:13-43:29
+action#android.intent.action.MAIN
+ADDED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:41:17-68
+	android:name
+		ADDED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:41:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:42:17-76
+	android:name
+		ADDED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml:42:27-74
+uses-sdk
+INJECTED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml
+INJECTED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml
+MERGED from [androidx.camera:camera-view:1.0.0-alpha09] C:\Users\yosriko\.gradle\caches\transforms-3\0b2a6b88af8ee15f59037c3c84b180b5\transformed\jetified-camera-view-1.0.0-alpha09\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.camera:camera-view:1.0.0-alpha09] C:\Users\yosriko\.gradle\caches\transforms-3\0b2a6b88af8ee15f59037c3c84b180b5\transformed\jetified-camera-view-1.0.0-alpha09\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\e91418bca0a70b48bc81469f1aad5455\transformed\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\e91418bca0a70b48bc81469f1aad5455\transformed\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] C:\Users\yosriko\.gradle\caches\transforms-3\a7635ca8b9d0b9f86204b203ae5c5060\transformed\jetified-lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] C:\Users\yosriko\.gradle\caches\transforms-3\a7635ca8b9d0b9f86204b203ae5c5060\transformed\jetified-lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\yosriko\.gradle\caches\transforms-3\cee7b266a99db95940fbab2bcdd01fff\transformed\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\yosriko\.gradle\caches\transforms-3\cee7b266a99db95940fbab2bcdd01fff\transformed\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.camera:camera-camera2:1.0.0-beta02] C:\Users\yosriko\.gradle\caches\transforms-3\89f1416f587488016bf5a8eac68a9d88\transformed\jetified-camera-camera2-1.0.0-beta02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.camera:camera-camera2:1.0.0-beta02] C:\Users\yosriko\.gradle\caches\transforms-3\89f1416f587488016bf5a8eac68a9d88\transformed\jetified-camera-camera2-1.0.0-beta02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.camera:camera-lifecycle:1.0.0-beta02] C:\Users\yosriko\.gradle\caches\transforms-3\68d0ada7a5ba648d01851c640c41dc26\transformed\jetified-camera-lifecycle-1.0.0-beta02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.camera:camera-lifecycle:1.0.0-beta02] C:\Users\yosriko\.gradle\caches\transforms-3\68d0ada7a5ba648d01851c640c41dc26\transformed\jetified-camera-lifecycle-1.0.0-beta02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.camera:camera-core:1.0.0-beta02] C:\Users\yosriko\.gradle\caches\transforms-3\1b9ec4bcba3f8ea372e7fb8e7eb31467\transformed\jetified-camera-core-1.0.0-beta02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.camera:camera-core:1.0.0-beta02] C:\Users\yosriko\.gradle\caches\transforms-3\1b9ec4bcba3f8ea372e7fb8e7eb31467\transformed\jetified-camera-core-1.0.0-beta02\AndroidManifest.xml:20:5-22:41
+MERGED from [org.tensorflow:tensorflow-lite-support:0.0.0-nightly] C:\Users\yosriko\.gradle\caches\transforms-3\e25a121dcb0e2ecab826a4b1f70f6fea\transformed\jetified-tensorflow-lite-support-0.0.0-nightly\AndroidManifest.xml:4:3-71
+MERGED from [org.tensorflow:tensorflow-lite-support:0.0.0-nightly] C:\Users\yosriko\.gradle\caches\transforms-3\e25a121dcb0e2ecab826a4b1f70f6fea\transformed\jetified-tensorflow-lite-support-0.0.0-nightly\AndroidManifest.xml:4:3-71
+MERGED from [org.tensorflow:tensorflow-lite:0.0.0-nightly] C:\Users\yosriko\.gradle\caches\transforms-3\d62a4857a8e740306129bb56a8133de1\transformed\jetified-tensorflow-lite-0.0.0-nightly\AndroidManifest.xml:7:5-8:41
+MERGED from [org.tensorflow:tensorflow-lite:0.0.0-nightly] C:\Users\yosriko\.gradle\caches\transforms-3\d62a4857a8e740306129bb56a8133de1\transformed\jetified-tensorflow-lite-0.0.0-nightly\AndroidManifest.xml:7:5-8:41
+MERGED from [org.tensorflow:tensorflow-lite-gpu:0.0.0-nightly] C:\Users\yosriko\.gradle\caches\transforms-3\8d6afd9ad186f79b788a0b481a4b811b\transformed\jetified-tensorflow-lite-gpu-0.0.0-nightly\AndroidManifest.xml:7:5-8:41
+MERGED from [org.tensorflow:tensorflow-lite-gpu:0.0.0-nightly] C:\Users\yosriko\.gradle\caches\transforms-3\8d6afd9ad186f79b788a0b481a4b811b\transformed\jetified-tensorflow-lite-gpu-0.0.0-nightly\AndroidManifest.xml:7:5-8:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\739027f5653922fe462a582136679660\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\739027f5653922fe462a582136679660\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\89c9d1c455a18857799127d0426301c6\transformed\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\89c9d1c455a18857799127d0426301c6\transformed\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\yosriko\.gradle\caches\transforms-3\f0635272d683513fc286d40040b04b0c\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\yosriko\.gradle\caches\transforms-3\f0635272d683513fc286d40040b04b0c\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\yosriko\.gradle\caches\transforms-3\89cd9d7d161b02790e8f61bc415cb03b\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\yosriko\.gradle\caches\transforms-3\89cd9d7d161b02790e8f61bc415cb03b\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\yosriko\.gradle\caches\transforms-3\8231b42a49e510820ead431158228c8e\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\yosriko\.gradle\caches\transforms-3\8231b42a49e510820ead431158228c8e\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\yosriko\.gradle\caches\transforms-3\ae7d70cb01ca83b8dbdf9d67e5419729\transformed\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\yosriko\.gradle\caches\transforms-3\ae7d70cb01ca83b8dbdf9d67e5419729\transformed\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\cacd13b5d76234a56e9042398c9c5830\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\cacd13b5d76234a56e9042398c9c5830\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\d703d0f0cc2c620f172afda6d034f438\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\d703d0f0cc2c620f172afda6d034f438\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\yosriko\.gradle\caches\transforms-3\c1aec78071ce38f6aba523516a4b39de\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\yosriko\.gradle\caches\transforms-3\c1aec78071ce38f6aba523516a4b39de\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\e4df6b6fc68e5bdf645c1fd4bd77db80\transformed\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\e4df6b6fc68e5bdf645c1fd4bd77db80\transformed\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\yosriko\.gradle\caches\transforms-3\d8ee4f8c13f5e317b767755f7d731423\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\yosriko\.gradle\caches\transforms-3\d8ee4f8c13f5e317b767755f7d731423\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\yosriko\.gradle\caches\transforms-3\aa3685f9f92b47d338c487628be256fc\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\yosriko\.gradle\caches\transforms-3\aa3685f9f92b47d338c487628be256fc\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\yosriko\.gradle\caches\transforms-3\cb20b6d7214ab519aeda8a94ea80e8e8\transformed\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\yosriko\.gradle\caches\transforms-3\cb20b6d7214ab519aeda8a94ea80e8e8\transformed\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\8943b84b8790115dc1d78878fc630176\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\8943b84b8790115dc1d78878fc630176\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\9d3946dd1bc9c9fa21986b1b39c50801\transformed\lifecycle-livedata-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\9d3946dd1bc9c9fa21986b1b39c50801\transformed\lifecycle-livedata-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\a5925ac075af2f25b2ae203fef621f12\transformed\lifecycle-livedata-core-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\a5925ac075af2f25b2ae203fef621f12\transformed\lifecycle-livedata-core-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\yosriko\.gradle\caches\transforms-3\7f03206f1df594c0a6ba5337fb22786a\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\yosriko\.gradle\caches\transforms-3\7f03206f1df594c0a6ba5337fb22786a\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\6cf2e64c5410295ae7db693472f6269b\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\6cf2e64c5410295ae7db693472f6269b\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\407e8f52a7031dd4fd89659b9663db96\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\yosriko\.gradle\caches\transforms-3\407e8f52a7031dd4fd89659b9663db96\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\yosriko\.gradle\caches\transforms-3\b1d422b3de29512f4f79934a9f779e30\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\yosriko\.gradle\caches\transforms-3\b1d422b3de29512f4f79934a9f779e30\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.0.0-rc01] C:\Users\yosriko\.gradle\caches\transforms-3\940b22fdbc1a06c0e304c86abd32fa80\transformed\jetified-annotation-experimental-1.0.0-rc01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0-rc01] C:\Users\yosriko\.gradle\caches\transforms-3\940b22fdbc1a06c0e304c86abd32fa80\transformed\jetified-annotation-experimental-1.0.0-rc01\AndroidManifest.xml:20:5-22:41
+INJECTED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml
+INJECTED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml
+		MERGED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml
+		MERGED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Yosriko\SEMESTER 6\PENELITIAN\Face recognition\camerax-tflite-master\app\src\main\AndroidManifest.xml

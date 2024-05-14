@@ -1,0 +1,174 @@
+[
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.android.example.camerax.tflite.app-main-14:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/drawable-ldpi_ic_shutter_normal.png.flat",
+        "source": "com.android.example.camerax.tflite.app-pngs-7:/drawable-ldpi/ic_shutter_normal.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/drawable-anydpi-v24_ic_shutter_pressed.xml.flat",
+        "source": "com.android.example.camerax.tflite.app-pngs-7:/drawable-anydpi-v24/ic_shutter_pressed.xml"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.android.example.camerax.tflite.app-main-14:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.android.example.camerax.tflite.app-main-14:/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.android.example.camerax.tflite.app-main-14:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.android.example.camerax.tflite.app-main-14:/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.android.example.camerax.tflite.app-main-14:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "com.android.example.camerax.tflite.app-main-14:/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/drawable-ldpi_ic_shutter_pressed.png.flat",
+        "source": "com.android.example.camerax.tflite.app-pngs-7:/drawable-ldpi/ic_shutter_pressed.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/drawable-hdpi_ic_shutter_focused.png.flat",
+        "source": "com.android.example.camerax.tflite.app-pngs-7:/drawable-hdpi/ic_shutter_focused.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/drawable-mdpi_ic_shutter_focused.png.flat",
+        "source": "com.android.example.camerax.tflite.app-pngs-7:/drawable-mdpi/ic_shutter_focused.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.android.example.camerax.tflite.app-main-14:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/drawable-mdpi_ic_shutter_normal.png.flat",
+        "source": "com.android.example.camerax.tflite.app-pngs-7:/drawable-mdpi/ic_shutter_normal.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/layout_activity_camera.xml.flat",
+        "source": "com.android.example.camerax.tflite.app-main-14:/layout/activity_camera.xml"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.android.example.camerax.tflite.app-main-14:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.android.example.camerax.tflite.app-main-14:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/drawable-xhdpi_ic_shutter_normal.png.flat",
+        "source": "com.android.example.camerax.tflite.app-pngs-7:/drawable-xhdpi/ic_shutter_normal.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/drawable-hdpi_ic_shutter_normal.png.flat",
+        "source": "com.android.example.camerax.tflite.app-pngs-7:/drawable-hdpi/ic_shutter_normal.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/drawable-xxhdpi_ic_shutter_focused.png.flat",
+        "source": "com.android.example.camerax.tflite.app-pngs-7:/drawable-xxhdpi/ic_shutter_focused.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.android.example.camerax.tflite.app-main-14:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.android.example.camerax.tflite.app-main-14:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/drawable-ldpi_ic_shutter_focused.png.flat",
+        "source": "com.android.example.camerax.tflite.app-pngs-7:/drawable-ldpi/ic_shutter_focused.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/drawable-mdpi_ic_shutter_pressed.png.flat",
+        "source": "com.android.example.camerax.tflite.app-pngs-7:/drawable-mdpi/ic_shutter_pressed.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/drawable-xxhdpi_ic_shutter_pressed.png.flat",
+        "source": "com.android.example.camerax.tflite.app-pngs-7:/drawable-xxhdpi/ic_shutter_pressed.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/layout-land_activity_camera.xml.flat",
+        "source": "com.android.example.camerax.tflite.app-main-14:/layout-land/activity_camera.xml"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.android.example.camerax.tflite.app-main-14:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.android.example.camerax.tflite.app-main-14:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/drawable-anydpi-v24_ic_shutter_focused.xml.flat",
+        "source": "com.android.example.camerax.tflite.app-pngs-7:/drawable-anydpi-v24/ic_shutter_focused.xml"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/drawable-xhdpi_ic_shutter_pressed.png.flat",
+        "source": "com.android.example.camerax.tflite.app-pngs-7:/drawable-xhdpi/ic_shutter_pressed.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/drawable-xxxhdpi_ic_shutter_normal.png.flat",
+        "source": "com.android.example.camerax.tflite.app-pngs-7:/drawable-xxxhdpi/ic_shutter_normal.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/drawable-hdpi_ic_shutter_pressed.png.flat",
+        "source": "com.android.example.camerax.tflite.app-pngs-7:/drawable-hdpi/ic_shutter_pressed.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.android.example.camerax.tflite.app-main-14:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/drawable-xhdpi_ic_shutter_focused.png.flat",
+        "source": "com.android.example.camerax.tflite.app-pngs-7:/drawable-xhdpi/ic_shutter_focused.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/drawable-xxhdpi_ic_shutter_normal.png.flat",
+        "source": "com.android.example.camerax.tflite.app-pngs-7:/drawable-xxhdpi/ic_shutter_normal.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.android.example.camerax.tflite.app-main-14:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/drawable-xxxhdpi_ic_shutter_pressed.png.flat",
+        "source": "com.android.example.camerax.tflite.app-pngs-7:/drawable-xxxhdpi/ic_shutter_pressed.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/drawable_ic_shutter.xml.flat",
+        "source": "com.android.example.camerax.tflite.app-main-14:/drawable/ic_shutter.xml"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/drawable-anydpi-v24_ic_shutter_normal.xml.flat",
+        "source": "com.android.example.camerax.tflite.app-pngs-7:/drawable-anydpi-v24/ic_shutter_normal.xml"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "com.android.example.camerax.tflite.app-main-14:/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/drawable-xxxhdpi_ic_shutter_focused.png.flat",
+        "source": "com.android.example.camerax.tflite.app-pngs-7:/drawable-xxxhdpi/ic_shutter_focused.png"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/drawable_shape_rectangle.xml.flat",
+        "source": "com.android.example.camerax.tflite.app-main-14:/drawable/shape_rectangle.xml"
+    },
+    {
+        "merged": "com.android.example.camerax.tflite.app-merged_res-12:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.android.example.camerax.tflite.app-main-14:/mipmap-xxxhdpi/ic_launcher_round.png"
+    }
+]
