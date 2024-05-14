@@ -1,11 +1,12 @@
-package id.ac.ukdw.fastmenu
+package id.ac.ukdw.fastmenu.activity
 
 import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import id.ac.ukdw.menuapp.R
+import com.example.tasktrackerapp.R
+import id.ac.ukdw.fastmenu.BerandaActivity
 
 
 class AddActivity : AppCompatActivity() {
@@ -36,7 +37,7 @@ class AddActivity : AppCompatActivity() {
                     dialog.dismiss()
                     if (message == "Data berhasil disimpan") {
                         // Redirect ke BerandaActivity jika data berhasil disimpan
-                        startActivity(Intent(this,BerandaActivity::class.java))
+                        startActivity(Intent(this, BerandaActivity::class.java))
                         finish() // Menutup AddActivity
                     }
                 }

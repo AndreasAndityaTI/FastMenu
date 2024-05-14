@@ -4,9 +4,10 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.example.tasktrackerapp.R
 import com.google.android.material.search.SearchBar
 import com.google.android.material.search.SearchView
-import id.ac.ukdw.menuapp.R
+import id.ac.ukdw.fastmenu.activity.AddActivity
 
 
 class BerandaActivity : AppCompatActivity() {

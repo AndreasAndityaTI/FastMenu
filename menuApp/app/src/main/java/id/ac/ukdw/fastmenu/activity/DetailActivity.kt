@@ -7,10 +7,9 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.example.tasktrackerapp.R
 import id.ac.ukdw.fastmenu.BerandaActivity
 import id.ac.ukdw.fastmenu.UpdateActivity
-
-import id.ac.ukdw.menuapp.R
 
 
 class DetailActivity : AppCompatActivity() {
