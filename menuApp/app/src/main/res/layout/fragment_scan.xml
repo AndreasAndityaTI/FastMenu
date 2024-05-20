@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.navigation.ScanFragment">
+    tools:context="id.ac.ukdw.fastmenu.view.navigation.ScanFragment">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_scan_photo"
@@ -17,15 +17,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-            <ImageView
-                android:id="@+id/iv_scan_photo"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:contentDescription="@string/foto"
-                android:scaleType="centerCrop"
-                android:src="@drawable/baseline_image_24"/>
+        <ImageView
+            android:id="@+id/iv_scan_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/foto"
+            android:scaleType="centerCrop"
+            android:src="@drawable/baseline_image_24" />
     </androidx.cardview.widget.CardView>
-
 
     <ProgressBar
         android:id="@+id/progress_bar"
@@ -97,5 +96,16 @@
         app:layout_constraintTop_toBottomOf="@+id/scan_button"
         tools:ignore="SmallSp" />
 
+    <!-- Result TextView -->
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/scan_button"
+        app:layout_constraintStart_toStartOf="@+id/scan_button"
+        app:layout_constraintTop_toBottomOf="@+id/scan_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

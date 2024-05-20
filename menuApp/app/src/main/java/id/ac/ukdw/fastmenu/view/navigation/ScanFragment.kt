@@ -3,6 +3,8 @@ package id.ac.ukdw.fastmenu.view.navigation
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
@@ -13,27 +15,25 @@ import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.lifecycleScope
 import com.example.tasktrackerapp.databinding.FragmentScanBinding
-import id.ac.ukdw.fastmenu.data.remote.ApiConfig
-import id.ac.ukdw.fastmenu.data.response.HasilItem
 import id.ac.ukdw.fastmenu.view.camera.getImageUri
 import id.ac.ukdw.fastmenu.view.camera.reduceFileImage
-import id.ac.ukdw.fastmenu.view.camera.uriToFile
-import id.ac.ukdw.fastmenu.view.detail.DetailMakananActivity
+import org.tensorflow.lite.Interpreter
+import org.tensorflow.lite.support.common.FileUtil
+import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
+import java.nio.ByteBuffer
+import java.nio.ByteOrder
+import id.ac.ukdw.fastmenu.data_object.ImageUtils
 import id.ac.ukdw.fastmenu.view.guide.GuideActivity
-import kotlinx.coroutines.launch
-import okhttp3.MediaType.Companion.toMediaType
-import okhttp3.MultipartBody
-import okhttp3.RequestBody.Companion.asRequestBody
-import retrofit2.HttpException
+import org.tensorflow.lite.DataType
 
 class ScanFragment : Fragment() {
     private lateinit var binding: FragmentScanBinding
-    private lateinit var id: String
+    private lateinit var tflite: Interpreter
+    private val labels = listOf("burger", "french fries")
+    private val imageSize = 224
 
     private var currentImageUri: Uri? = null
-
 
     private val launcherGallery =
         registerForActivityResult(ActivityResultContracts.GetContent()) { uri: Uri? ->
@@ -70,34 +70,29 @@ class ScanFragment : Fragment() {
         }
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
+        inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentScanBinding.inflate(inflater, container, false)
         return binding.root
-
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        if(!allPermissionsGranted()){
+        if (!allPermissionsGranted()) {
             requestPermissionLauncher.launch(REQUIRED_PERMISSION)
         }
 
+        tflite = Interpreter(FileUtil.loadMappedFile(requireContext(), "model.tflite"))
 
-        binding.galleryButton.setOnClickListener {startGallery()}
-        binding.cameraButton.setOnClickListener {
-            startCamera()
-        }
+        binding.galleryButton.setOnClickListener { startGallery() }
+        binding.cameraButton.setOnClickListener { startCamera() }
         binding.scanButton.setOnClickListener {
-
             val foto = binding.ivScanPhoto.drawable
             if (foto != null) {
                 uploadImage()
-            }else {
+            } else {
                 showToast("Silahkan Masukkan Foto untuk di scan")
             }
         }
@@ -106,7 +101,6 @@ class ScanFragment : Fragment() {
             val intentGuide = Intent(requireContext(), GuideActivity::class.java)
             startActivity(intentGuide)
         }
-
     }
 
     private fun startGallery() {
@@ -135,41 +129,27 @@ class ScanFragment : Fragment() {
 
     private fun uploadImage() {
         currentImageUri?.let { uri ->
-            val imageFile = uriToFile(uri, requireContext()).reduceFileImage()
-//            Log.d("Image File", "showImage: ${imageFile.path}")
-            showLoading(true)
-
-            val requestImageFile = imageFile.asRequestBody("image/jpeg".toMediaType())
-            val multipartBody = MultipartBody.Part.createFormData(
-                "file",
-                imageFile.name,
-                requestImageFile
-            )
-
-            lifecycleScope.launch {
-                try {
-                    val apiService = ApiConfig.getApiService()
-                    val successResponse = apiService.uploadImage(multipartBody)
-                    val hasil : List<HasilItem> = successResponse.hasil
-                    id = hasil[0].id.toString()
-                    val intentDetail = Intent(requireContext(), DetailMakananActivity::class.java)
-                    intentDetail.putExtra(DetailMakananActivity.EXTRA_ID, id)
-                    startActivity(intentDetail)
-                    showLoading(false)
-                } catch (e: HttpException) {
-                    val errorBody = e.response()?.errorBody()?.string()
-                    showToast(errorBody!!)
-                    showLoading(false)
-                }
-            }
-
-        }
+            val bitmap = BitmapFactory.decodeStream(requireContext().contentResolver.openInputStream(uri))
+            val scaledBitmap = Bitmap.createScaledBitmap(bitmap, imageSize, imageSize, true)
+            val byteBuffer = ImageUtils.convertBitmapToByteBuffer(scaledBitmap, imageSize)
+            val result = classifyImage(byteBuffer)
+            showResult(result)
+        } ?: showToast("Please select an image first.")
     }
 
+    private fun classifyImage(byteBuffer: ByteBuffer): String {
+        val outputBuffer = TensorBuffer.createFixedSize(intArrayOf(1, labels.size), DataType.FLOAT32)
+        tflite.run(byteBuffer, outputBuffer.buffer.rewind())
+        val output = outputBuffer.floatArray
+        val maxIndex = output.indices.maxByOrNull { output[it] } ?: -1
+        return labels[maxIndex]
+    }
 
+    private fun showResult(result: String) {
+        binding.resultTextView.text = "Predicted: $result"
+    }
 
     companion object {
         private const val REQUIRED_PERMISSION = Manifest.permission.CAMERA
     }
-
 }
