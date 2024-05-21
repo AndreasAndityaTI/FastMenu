@@ -17,13 +17,11 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.example.tasktrackerapp.databinding.FragmentScanBinding
 import id.ac.ukdw.fastmenu.view.camera.getImageUri
-import id.ac.ukdw.fastmenu.view.camera.reduceFileImage
 import org.tensorflow.lite.Interpreter
 import org.tensorflow.lite.support.common.FileUtil
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
-import id.ac.ukdw.fastmenu.data_object.ImageUtils
 import id.ac.ukdw.fastmenu.view.guide.GuideActivity
 import org.tensorflow.lite.DataType
 
@@ -84,13 +82,17 @@ class ScanFragment : Fragment() {
             requestPermissionLauncher.launch(REQUIRED_PERMISSION)
         }
 
-        tflite = Interpreter(FileUtil.loadMappedFile(requireContext(), "model.tflite"))
+        try {
+            tflite = Interpreter(FileUtil.loadMappedFile(requireContext(), "model.tflite"))
+        } catch (e: Exception) {
+            showToast("Error loading model: ${e.message}")
+            Log.e("ScanFragment", "Error loading model", e)
+        }
 
         binding.galleryButton.setOnClickListener { startGallery() }
         binding.cameraButton.setOnClickListener { startCamera() }
         binding.scanButton.setOnClickListener {
-            val foto = binding.ivScanPhoto.drawable
-            if (foto != null) {
+            if (binding.ivScanPhoto.drawable != null) {
                 uploadImage()
             } else {
                 showToast("Silahkan Masukkan Foto untuk di scan")
@@ -101,6 +103,11 @@ class ScanFragment : Fragment() {
             val intentGuide = Intent(requireContext(), GuideActivity::class.java)
             startActivity(intentGuide)
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        tflite.close()
     }
 
     private fun startGallery() {
@@ -129,12 +136,30 @@ class ScanFragment : Fragment() {
 
     private fun uploadImage() {
         currentImageUri?.let { uri ->
-            val bitmap = BitmapFactory.decodeStream(requireContext().contentResolver.openInputStream(uri))
-            val scaledBitmap = Bitmap.createScaledBitmap(bitmap, imageSize, imageSize, true)
-            val byteBuffer = ImageUtils.convertBitmapToByteBuffer(scaledBitmap, imageSize)
-            val result = classifyImage(byteBuffer)
-            showResult(result)
+            try {
+                val bitmap = BitmapFactory.decodeStream(requireContext().contentResolver.openInputStream(uri))
+                val scaledBitmap = Bitmap.createScaledBitmap(bitmap, imageSize, imageSize, true)
+                val byteBuffer = convertBitmapToByteBuffer(scaledBitmap)
+                val result = classifyImage(byteBuffer)
+                showResult(result)
+            } catch (e: Exception) {
+                showToast("Error processing image: ${e.message}")
+                Log.e("ScanFragment", "Error processing image", e)
+            }
         } ?: showToast("Please select an image first.")
+    }
+
+    private fun convertBitmapToByteBuffer(bitmap: Bitmap): ByteBuffer {
+        val byteBuffer = ByteBuffer.allocateDirect(4 * imageSize * imageSize * 3)
+        byteBuffer.order(ByteOrder.nativeOrder())
+        val intValues = IntArray(imageSize * imageSize)
+        bitmap.getPixels(intValues, 0, bitmap.width, 0, 0, bitmap.width, bitmap.height)
+        for (pixelValue in intValues) {
+            byteBuffer.putFloat(((pixelValue shr 16) and 0xFF) / 255.0f)
+            byteBuffer.putFloat(((pixelValue shr 8) and 0xFF) / 255.0f)
+            byteBuffer.putFloat((pixelValue and 0xFF) / 255.0f)
+        }
+        return byteBuffer
     }
 
     private fun classifyImage(byteBuffer: ByteBuffer): String {
@@ -142,7 +167,7 @@ class ScanFragment : Fragment() {
         tflite.run(byteBuffer, outputBuffer.buffer.rewind())
         val output = outputBuffer.floatArray
         val maxIndex = output.indices.maxByOrNull { output[it] } ?: -1
-        return labels[maxIndex]
+        return labels.getOrNull(maxIndex) ?: "Unknown"
     }
 
     private fun showResult(result: String) {
