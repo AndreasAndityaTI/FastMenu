@@ -1,0 +1,66 @@
+import okhttp3.*
+import com.squareup.moshi.JsonClass
+import com.squareup.moshi.Moshi
+import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
+import java.io.IOException
+
+val client = OkHttpClient()
+
+val modelUrl = "https://api.clarifai.com/v2/models/food-item-recognition/outputs"
+val imageUrl = "https://asset.kompas.com/crops/JFC1_i_OaGvcNEviEw4WKk-r3qQ=/12x51:892x637/750x500/data/photo/2022/03/05/622358ed771fb.jpg"
+val pat = "928db2d6395e48cc9cd35ffebfd536dc"
+
+val json = """
+{
+  "inputs": [
+    {
+      "data": {
+        "image": {
+          "url": "$imageUrl"
+        }
+      }
+    }
+  ]
+}
+"""
+
+val request = Request.Builder()
+    .url(modelUrl)
+    .post(RequestBody.create(MediaType.parse("application/json"), json))
+    .addHeader("Authorization", "Key $pat")
+    .build()
+
+client.newCall(request).enqueue(object : Callback {
+    override fun onFailure(call: Call, e: IOException) {
+        e.printStackTrace()
+    }
+
+    override fun onResponse(call: Call, response: Response) {
+        response.use {
+            if (!response.isSuccessful) throw IOException("Unexpected code $response")
+
+            // Parse the JSON response using Moshi
+            val moshi = Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
+            val adapter = moshi.adapter(ClarifaiResponse::class.java)
+            val clarifaiResponse = adapter.fromJson(response.body?.string())
+
+            // Print the top 3 concepts
+            clarifaiResponse?.outputs?.firstOrNull()?.data?.concepts?.take(3)?.forEach { concept ->
+                println("${concept.name}: ${concept.value}")
+            }
+        }
+    }
+})
+
+// Data classes for parsing JSON response
+@JsonClass(generateAdapter = true)
+data class ClarifaiResponse(val outputs: List<Output>)
+
+@JsonClass(generateAdapter = true)
+data class Output(val data: Data)
+
+@JsonClass(generateAdapter = true)
+data class Data(val concepts: List<Concept>)
+
+@JsonClass(generateAdapter = true)
+data class Concept(val id: String, val name: String, val value: Double)
