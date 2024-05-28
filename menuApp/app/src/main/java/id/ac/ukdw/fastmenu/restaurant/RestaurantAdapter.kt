@@ -1,12 +1,13 @@
-package com.concept.finder.restaurant
+package id.ac.ukdw.fastmenu.restaurant
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
-import com.concept.finder.R
-import com.concept.finder.databinding.RestaurantItemBinding
+
+import com.example.tasktrackerapp
 import com.concept.finder.model.domain.Restaurant
+import com.example.tasktrackerapp.R
 
 class RestaurantAdapter(private val onRestaurantClicked:(id: String) -> Unit) : RecyclerView.Adapter<RestaurantAdapter.RestaurantViewHolder>() {
 
