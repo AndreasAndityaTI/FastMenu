@@ -61,6 +61,7 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
 //    implementation("com.google.andro.id.material:material:1.11.0")
 //    implementation("androidxconstraintlayout:constraintlayout:2.1.4")
+
     implementation("com.google.android.material:material:1.12.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
@@ -79,5 +80,10 @@ dependencies {
     implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.8.0")
     implementation("androidx.activity:activity-ktx:1.9.0")
     implementation("de.hdodenhof:circleimageview:3.1.0")
+
+    implementation("com.squareup.okhttp3:okhttp:4.9.1")
+    implementation("com.squareup.moshi:moshi:1.12.0")
+    implementation("com.squareup.moshi:moshi-kotlin:1.12.0")
+
 
 }
