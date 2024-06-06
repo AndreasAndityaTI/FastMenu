@@ -29,6 +29,7 @@
     <string name="logo">Logo</string>
     <string name="cara_yang_salah">Cara yang salah</string>
     <string name="cara_yang_benar">Cara yang benar</string>
+    <string name="default_web_client_id">704086410336-488oeji6it8c67evje2hn4ej87t2tcsf.apps.googleusercontent.com</string>
 
     <string-array name="data_makanan_name">
         <item>Bujuh</item>

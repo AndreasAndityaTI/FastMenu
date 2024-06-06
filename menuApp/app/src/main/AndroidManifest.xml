@@ -3,12 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-feature android:name="android.hardware.camera" />
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
-
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="28" />
+
+    <uses-sdk
+        android:minSdkVersion="23"
+        tools:replace="android:minSdkVersion" />
 
     <application
         android:allowBackup="true"
@@ -20,6 +24,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kultura"
         tools:targetApi="31">
+        <activity
+            android:name="id.ac.ukdw.fastmenu.view.SignInActivity"
+            android:exported="false" />
         <activity
             android:name="com.FastMenu.app.view.splash.SplashScreenActivity"
             android:exported="true">
@@ -40,8 +47,7 @@
             android:exported="false" />
         <activity
             android:name="id.ac.ukdw.fastmenu.view.main.MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
@@ -50,9 +56,7 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths"/>
+                android:resource="@xml/file_paths" />
         </provider>
-
     </application>
-
 </manifest>

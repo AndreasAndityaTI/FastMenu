@@ -4,6 +4,9 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("kotlin-parcelize")
     id("kotlin-kapt")
+    id("com.google.gms.google-services")
+    id("com.google.firebase.crashlytics")
+
 
 //    id("kotlin-android-extensions")
 
@@ -23,7 +26,7 @@ android {
     }
     defaultConfig {
         applicationId = "com.example.tasktrackerapp"
-        minSdk = 21
+        minSdk = 23
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
@@ -62,6 +65,8 @@ dependencies {
 //    implementation("com.google.andro.id.material:material:1.11.0")
 //    implementation("androidxconstraintlayout:constraintlayout:2.1.4")
     implementation("com.google.android.material:material:1.12.0")
+    implementation("com.google.firebase:firebase-auth:23.0.0")
+    implementation("androidx.activity:activity:1.8.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
@@ -79,5 +84,10 @@ dependencies {
     implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.8.0")
     implementation("androidx.activity:activity-ktx:1.9.0")
     implementation("de.hdodenhof:circleimageview:3.1.0")
+    implementation(platform("com.google.firebase:firebase-bom:31.5.0"))
+    implementation("com.google.firebase:firebase-analytics-ktx")
+    implementation("com.google.firebase:firebase-crashlytics-ktx")
+    implementation("com.google.android.gms:play-services-auth:20.5.0")
+
 
 }
