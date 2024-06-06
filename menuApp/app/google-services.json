@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "704086410336",
+    "project_id": "fastmenu-423618",
+    "storage_bucket": "fastmenu-423618.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704086410336:android:6bde959add53c54ba46f05",
+        "android_client_info": {
+          "package_name": "com.example.tasktrackerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "704086410336-488oeji6it8c67evje2hn4ej87t2tcsf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuhB2dmaA1vGpVV-bJCVjUE8t1jVVBtSA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "704086410336-488oeji6it8c67evje2hn4ej87t2tcsf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
