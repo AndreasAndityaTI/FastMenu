@@ -48,7 +48,12 @@
         <activity
             android:name="id.ac.ukdw.fastmenu.view.main.MainActivity"
             android:exported="true" />
-
+        <activity
+            android:name="id.ac.ukdw.fastmenu.view.RestaurantListActivity"
+            android:exported="false" />
+        <activity
+            android:name="id.ac.ukdw.fastmenu.view.RestaurantDetailActivity"
+            android:exported="true" />
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.fileprovider"
