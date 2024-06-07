@@ -17,19 +17,18 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.example.tasktrackerapp.databinding.FragmentScanBinding
 import id.ac.ukdw.fastmenu.view.camera.getImageUri
+import id.ac.ukdw.fastmenu.view.guide.GuideActivity
+import org.tensorflow.lite.DataType
 import org.tensorflow.lite.Interpreter
 import org.tensorflow.lite.support.common.FileUtil
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
-import id.ac.ukdw.fastmenu.view.guide.GuideActivity
-import org.tensorflow.lite.DataType
 
 class ScanFragment : Fragment() {
     private lateinit var binding: FragmentScanBinding
     private lateinit var tflite: Interpreter
     private val labels = listOf("burger", "french fries")
-    private val imageSize = 224
 
     private var currentImageUri: Uri? = null
 
@@ -83,7 +82,7 @@ class ScanFragment : Fragment() {
         }
 
         try {
-            tflite = Interpreter(FileUtil.loadMappedFile(requireContext(), "model.tflite"))
+            tflite = Interpreter(FileUtil.loadMappedFile(requireContext(), "model3.tflite"))
         } catch (e: Exception) {
             showToast("Error loading model: ${e.message}")
             Log.e("ScanFragment", "Error loading model", e)
@@ -134,6 +133,8 @@ class ScanFragment : Fragment() {
         Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
     }
 
+    private val imageSize = 96 // Updated to 96
+
     private fun uploadImage() {
         currentImageUri?.let { uri ->
             try {
@@ -150,21 +151,22 @@ class ScanFragment : Fragment() {
     }
 
     private fun convertBitmapToByteBuffer(bitmap: Bitmap): ByteBuffer {
-        val byteBuffer = ByteBuffer.allocateDirect(4 * imageSize * imageSize * 3)
+        val byteBuffer = ByteBuffer.allocateDirect(4 * imageSize * imageSize * 3) // Ensure correct size allocation
         byteBuffer.order(ByteOrder.nativeOrder())
         val intValues = IntArray(imageSize * imageSize)
         bitmap.getPixels(intValues, 0, bitmap.width, 0, 0, bitmap.width, bitmap.height)
         for (pixelValue in intValues) {
-            byteBuffer.putFloat(((pixelValue shr 16) and 0xFF) / 255.0f)
-            byteBuffer.putFloat(((pixelValue shr 8) and 0xFF) / 255.0f)
-            byteBuffer.putFloat((pixelValue and 0xFF) / 255.0f)
+            byteBuffer.putFloat(((pixelValue shr 16) and 0xFF) / 255.0f * 2 - 1) // Red
+            byteBuffer.putFloat(((pixelValue shr 8) and 0xFF) / 255.0f * 2 - 1)  // Green
+            byteBuffer.putFloat((pixelValue and 0xFF) / 255.0f * 2 - 1)          // Blue
         }
+        byteBuffer.rewind() // Rewind the ByteBuffer to the beginning
         return byteBuffer
     }
 
     private fun classifyImage(byteBuffer: ByteBuffer): String {
-        val outputBuffer = TensorBuffer.createFixedSize(intArrayOf(1, labels.size), DataType.FLOAT32)
-        tflite.run(byteBuffer, outputBuffer.buffer.rewind())
+        val outputBuffer = TensorBuffer.createFixedSize(intArrayOf(1, 1280), DataType.FLOAT32) // Ensure output buffer matches expected shape
+        tflite.run(byteBuffer, outputBuffer.buffer.rewind()) // Ensure the ByteBuffer is rewound
         val output = outputBuffer.floatArray
         val maxIndex = output.indices.maxByOrNull { output[it] } ?: -1
         return labels.getOrNull(maxIndex) ?: "Unknown"
@@ -173,6 +175,7 @@ class ScanFragment : Fragment() {
     private fun showResult(result: String) {
         binding.resultTextView.text = "Predicted: $result"
     }
+
 
     companion object {
         private const val REQUIRED_PERMISSION = Manifest.permission.CAMERA
